@@ -1,27 +1,40 @@
 
 // initialisation
 document.getElementById('time-mesurement').value = 0;
-var second = 6;
+var second = 6; 
+var minute = 0;
 
 // function 
 function chrono() {
     document.querySelector('.seconde').style.transform = `rotate(${second}deg)`;
     document.getElementById('time-mesurement').value = second / 6
     second = second + 6;
-
 }
+function updateMinute(){
+    console.log('update minute')
+    minute++;
+    console.log('minute:', minute)
+    document.getElementById('counter-minute').textContent = minute ;
+}
+
 var myIntreval;
+var myIntrevalMinute;
 const start = () => {
-    myIntreval = setInterval(chrono, 1000);
+    myIntrevalSecond = setInterval(chrono, 1000);
+    myIntrevalMinute = setInterval(updateMinute, 60000);
 }
 const pause = () => {
-    clearInterval(myIntreval);
+    clearInterval(myIntrevalSecond);
+    clearInterval(myIntrevalMinute);
 }
 const reset = () => {
     clearInterval(myIntreval);
+    clearInterval(myIntrevalMinute);    
     document.getElementById('time-mesurement').value = 0;
+    document.getElementById('counter-minute').textcontent = '' ;
     document.querySelector('.seconde').style.transform = `rotate(0deg)`;
     second = 6;
+    minute = 0;
 }
 
 // evenements
