@@ -9,34 +9,30 @@ function chrono() {
     console.log('chrono');
     document.querySelector('.seconde').style.transform = `rotate(${second}deg)`;
     document.getElementById('time-mesurement').value = second / 6
+    if ((second % 360) == 0){
+        console.log('update minute')
+        minute++;
+        console.log('minute:', minute)
+        document.getElementById('counter-minute').textContent = minute ;
+    }
     second = second + 6;
-}
-function updateMinute(){
-    console.log('update minute')
-    minute++;
-    console.log('minute:', minute)
-    document.getElementById('counter-minute').textContent = minute ;
 }
 
 var myIntervalSecond;
-var myIntervalMinute;
 const start = () => {
     myIntervalSecond = setInterval(chrono, 1000);
-    myIntervalMinute = setInterval(updateMinute, 60000);
-}
+};
 const pause = () => {
     clearInterval(myIntervalSecond);
-    clearInterval(myIntervalMinute);
-}
+};
 const reset = () => {
-    clearInterval(myIntervalSecond);
-    clearInterval(myIntervalMinute);    
+    clearInterval(myIntervalSecond);   
     document.getElementById('time-mesurement').value = 0;
     document.getElementById('counter-minute').textContent = '0' ;
     document.querySelector('.seconde').style.transform = `rotate(0deg)`;
     second = 6;
     minute = 0;
-}
+};
 
 // evenements
 document.getElementById('button_start')
