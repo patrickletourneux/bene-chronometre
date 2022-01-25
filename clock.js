@@ -1,5 +1,4 @@
 
-
 var second = 0;
 function chrono() {
     document.querySelector('.seconde').style.transform = `rotate(${second}deg)`;
