@@ -1,0 +1,102 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: black; */
+
+}
+
+.clock {
+    margin-top: 30px;
+    border-radius: 50%;
+    background: #fff;
+    border: 5px solid white;
+    box-shadow: inset 2px 3px 8px 0 rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 350px;
+}
+
+.wrap {
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+.minute, .heure {
+    position: absolute;
+    height: 100px; width: 6px;
+    margin: auto;
+    top: -27%; left: 0;	bottom: 0; right: 0;
+    transform-origin: bottom center;
+    transform: rotate(0deg);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    background: black;
+}
+
+.minute {
+    position: absolute;
+    height: 130px;
+    width: 4px;
+    top: -38%;
+    left: 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    transform: rotate(90deg);
+}
+
+.seconde {
+    position: absolute;
+    height: 150px;
+    width: 5px;
+    margin: auto;
+    top: -42%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 4px;
+    background: hsl(239, 66%, 53%);
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+}
+.dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #1b1b1b;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.horizontal-line{ 
+    position: absolute;
+    height: 400px;
+    width: 4px;
+    top: -7%;
+    left: 173px;
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4); */
+    transform: rotate(90deg);
+    background: #ccc;
+
+}
+
+.vertical-line{ 
+    position: absolute;
+    height: 400px;
+    width: 4px;
+    top: -7%;
+    left: 173px;
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4); */
+    /* transform: rotate(90deg); */
+    background: #ccc;
+
+}
+
+.user_gui{
+    margin-top: 10px;
+}
