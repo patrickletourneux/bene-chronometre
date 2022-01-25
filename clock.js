@@ -22,7 +22,7 @@ var myIntervalSecond;
 var myIntervalMinute;
 const start = () => {
     myIntervalSecond = setInterval(chrono, 1000);
-    myIntervalMinute = setInterval(updateMinute, 60000);
+    myIntervalMinute = setInterval(updateMinute, 2000);
 }
 const pause = () => {
     clearInterval(myIntervalSecond);
@@ -32,7 +32,7 @@ const reset = () => {
     clearInterval(myIntervalSecond);
     clearInterval(myIntervalMinute);    
     document.getElementById('time-mesurement').value = 0;
-    document.getElementById('counter-minute').textcontent = '' ;
+    document.getElementById('counter-minute').textContent = '0' ;
     document.querySelector('.seconde').style.transform = `rotate(0deg)`;
     second = 6;
     minute = 0;
