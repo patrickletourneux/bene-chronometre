@@ -22,7 +22,7 @@ var myIntervalSecond;
 var myIntervalMinute;
 const start = () => {
     myIntervalSecond = setInterval(chrono, 1000);
-    myIntervalMinute = setInterval(updateMinute, 2000);
+    myIntervalMinute = setInterval(updateMinute, 60000);
 }
 const pause = () => {
     clearInterval(myIntervalSecond);
