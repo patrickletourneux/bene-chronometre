@@ -1,3 +1,16 @@
+
+
+var second = 0;
+function chrono() {
+    document.querySelector('.seconde').style.transform = `rotate(${second}deg)`;
+    document.getElementById('time-mesurement').value = second/6
+    second = second+6;
+
+}
+chrono() 
+setInterval(chrono, 1000);
+
+
 // clock();
 
 // function clock() {
@@ -15,16 +28,3 @@
 
 //   document.querySelector('.seconde').style.transform = `rotate(${second}deg)`;
 // }
-
-
-
-
-
-var second = 0;
-function chrono() {
-    document.querySelector('.seconde').style.transform = `rotate(${second}deg)`;
-    second = second+6;
-
-}
-chrono() 
-setInterval(chrono, 1000);
