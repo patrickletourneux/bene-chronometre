@@ -19,20 +19,33 @@ function chrono() {
 }
 
 var myIntervalSecond;
-const start = () => {
-    myIntervalSecond = setInterval(chrono, 1000);
-};
-const pause = () => {
+const start = (event) => {
     clearInterval(myIntervalSecond);
+    myIntervalSecond = setInterval(chrono, 1000);
+    const element = event.target
+    changeColorButton(element);
 };
-const reset = () => {
+const pause = (event) => {
+    clearInterval(myIntervalSecond);
+    const element = event.target
+    changeColorButton(element);
+};
+const reset = (event) => {
     clearInterval(myIntervalSecond);   
     document.getElementById('time-mesurement').value = 0;
     document.getElementById('counter-minute').textContent = '0' ;
     document.querySelector('.seconde').style.transform = `rotate(0deg)`;
     second = 1;
     minute = 0;
+    const element = event.target
+    changeColorButton(element);
 };
+const changeColorButton = (element) => {
+    element.style.backgroundColor = 'hsl(239, 66%, 53%)';
+    myIntervalcolor = setTimeout(() => {
+        element.style.backgroundColor = 'rgb(231, 231, 231)'
+    }, 300);
+}
 
 // evenements
 document.getElementById('button_start')
@@ -43,6 +56,7 @@ document.getElementById('button_pause')
 
 document.getElementById('button_reset')
     .addEventListener('click', reset);
+
 
 
 

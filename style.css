@@ -116,4 +116,5 @@ input {
 button{
     height: 80px;
     width: 90px;
+    background-color: rgb(231, 231, 231);
 }
