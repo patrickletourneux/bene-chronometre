@@ -1,21 +1,21 @@
 
 // initialisation
 document.getElementById('time-mesurement').value = 0;
-var second = 6; 
+var second = 1; 
 var minute = 0;
 
 // function 
 function chrono() {
     console.log('chrono');
-    document.querySelector('.seconde').style.transform = `rotate(${second}deg)`;
-    document.getElementById('time-mesurement').value = second / 6
-    if ((second % 360) == 0){
+    document.querySelector('.seconde').style.transform = `rotate(${second*6}deg)`;
+    document.getElementById('time-mesurement').value = second
+    if ((second % 60) == 0){
         console.log('update minute')
         minute++;
         console.log('minute:', minute)
         document.getElementById('counter-minute').textContent = minute ;
     }
-    second = second + 6;
+    second++;
 }
 
 var myIntervalSecond;
@@ -30,7 +30,7 @@ const reset = () => {
     document.getElementById('time-mesurement').value = 0;
     document.getElementById('counter-minute').textContent = '0' ;
     document.querySelector('.seconde').style.transform = `rotate(0deg)`;
-    second = 6;
+    second = 1;
     minute = 0;
 };
 
