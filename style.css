@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -25,11 +25,16 @@ body{
     height: 350px;
 }
 
-.minute, .heure {
+.minute,
+.heure {
     position: absolute;
-    height: 100px; width: 6px;
+    height: 100px;
+    width: 6px;
     margin: auto;
-    top: -27%; left: 0;	bottom: 0; right: 0;
+    top: -27%;
+    left: 0;
+    bottom: 0;
+    right: 0;
     transform-origin: bottom center;
     transform: rotate(0deg);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
@@ -48,22 +53,24 @@ body{
 
 .seconde {
     position: absolute;
-    /* height: 150px; */
-    /* width: 500px; */
+    height: 300px;
+    width: 300px;
     margin: auto;
-    top: -42%;
-    left: 0;
+    top: 0px;
+    left: 0px;
     bottom: 0;
     right: 0;
     border-radius: 4px;
     /* background: hsl(239, 66%, 53%); */
-    transform-origin: bottom center;
-    transform: rotate(0deg);
-    background-image: url("aiguille-fleche.png");
+    transform-origin: center;
+    transform: rotate(90deg);
+    background-image: url(aiguille-fleche.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50%;
+    background-size: 55%;
+    background-position: 1%;
 }
+
 .dot {
     position: absolute;
     top: 0;
@@ -79,7 +86,7 @@ body{
     margin: auto;
 }
 
-.horizontal-line{ 
+.horizontal-line {
     position: absolute;
     height: 400px;
     width: 4px;
@@ -91,7 +98,7 @@ body{
 
 }
 
-.vertical-line{ 
+.vertical-line {
     position: absolute;
     height: 400px;
     width: 4px;
@@ -103,7 +110,7 @@ body{
 
 }
 
-.user_gui{
+.user_gui {
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
@@ -119,7 +126,7 @@ input {
     font-family: 'Kaushan Script', cursive;
 }
 
-button{
+button {
     height: 80px;
     width: 90px;
     background-color: rgb(231, 231, 231);

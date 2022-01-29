@@ -7,7 +7,7 @@ var minute = 0;
 // function 
 function chrono() {
     console.log('chrono');
-    document.querySelector('.seconde').style.transform = `rotate(${second*6}deg)`;
+    document.querySelector('.seconde').style.transform = `rotate(${90+(second*6)}deg)`;
     document.getElementById('time-mesurement').value = second
     if ((second % 60) == 0){
         console.log('update minute')
@@ -34,7 +34,7 @@ const reset = (event) => {
     clearInterval(myIntervalSecond);   
     document.getElementById('time-mesurement').value = 0;
     document.getElementById('counter-minute').textContent = '0' ;
-    document.querySelector('.seconde').style.transform = `rotate(0deg)`;
+    document.querySelector('.seconde').style.transform = `rotate(90deg)`;
     second = 1;
     minute = 0;
     const element = event.target
