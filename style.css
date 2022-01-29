@@ -4,6 +4,7 @@ body{
     flex-direction: column;
     align-items: center;
     /* background-color: black; */
+    font-family: 'Kaushan Script', cursive;
 
 }
 
@@ -111,10 +112,12 @@ input {
     height: 50px;
     width: 150px;
     border: none;
+    font-family: 'Kaushan Script', cursive;
 }
 
 button{
     height: 80px;
     width: 90px;
     background-color: rgb(231, 231, 231);
+    font-family: 'Kaushan Script', cursive;
 }
