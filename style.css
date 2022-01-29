@@ -71,7 +71,25 @@ body {
     background-position: 1%;
 }
 
-.dot {
+
+.losange{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    top: 0px;
+    left: 92px;
+    bottom: 0;
+    right: 0;
+    /* background: hsl(239, 66%, 53%); */
+    transform-origin: center;
+    background-image: url(losange.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55%;
+    background-position: 1%;
+}
+/* .dot {
     position: absolute;
     top: 0;
     left: 0;
@@ -84,7 +102,7 @@ body {
     border: 2px solid #1b1b1b;
     border-radius: 50%;
     margin: auto;
-}
+} */
 
 /* .horizontal-line {
     position: absolute;
@@ -98,12 +116,14 @@ body {
 
 /* .vertical-line {
     position: absolute;
-    height: 400px;
+    height: 200px;
     width: 4px;
-    top: -7%;
+    top: 0%;
     left: 173px;
     background: #ccc;
 } */
+
+
 
 .user_gui {
     margin-top: 10px;
