@@ -8,7 +8,7 @@ body {
 
 }
 
-.clock {
+/* .clock {
     margin-top: 30px;
     margin-bottom: 30px;
     border-radius: 50%;
@@ -17,7 +17,7 @@ body {
     box-shadow: inset 2px 3px 8px 0 rgba(0, 0, 0, 0.1);
     width: 350px;
     height: 350px;
-}
+} */
 
 .wrap {
     position: relative;
@@ -86,29 +86,24 @@ body {
     margin: auto;
 }
 
-.horizontal-line {
+/* .horizontal-line {
     position: absolute;
     height: 400px;
     width: 4px;
     top: -7%;
     left: 173px;
-    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4); */
     transform: rotate(90deg);
     background: #ccc;
+} */
 
-}
-
-.vertical-line {
+/* .vertical-line {
     position: absolute;
     height: 400px;
     width: 4px;
     top: -7%;
     left: 173px;
-    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4); */
-    /* transform: rotate(90deg); */
     background: #ccc;
-
-}
+} */
 
 .user_gui {
     margin-top: 10px;
