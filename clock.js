@@ -9,6 +9,7 @@ function chrono() {
     console.log('chrono');
     document.querySelector('.seconde').style.transform = `rotate(${90+(second*6)}deg)`;
     document.getElementById('time-mesurement').value = second
+    document.getElementById('counter-seconde').textContent = second % 60 ;
     if ((second % 60) == 0){
         console.log('update minute')
         minute++;

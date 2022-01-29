@@ -8,6 +8,9 @@ body {
 
 }
 
+#title{
+    text-decoration: underline;
+}
 /* .clock {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -75,10 +78,10 @@ body {
 .losange{
     position: absolute;
     height: 300px;
-    width: 300px;
+    width: 276px;
     margin: auto;
     top: 0px;
-    left: 92px;
+    left: 69px;
     bottom: 0;
     right: 0;
     /* background: hsl(239, 66%, 53%); */
@@ -86,8 +89,8 @@ body {
     background-image: url(losange.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 55%;
-    background-position: 1%;
+    background-size: 79%;
+    background-position: -7%;
 }
 /* .dot {
     position: absolute;
@@ -128,15 +131,27 @@ body {
 .user_gui {
     margin-top: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
+}
+
+.user.button{
+    display: flex;
+}
+
+.counter{
+    width: 150px; 
+    display: flex;
+    font-size: 2rem;
 }
 
 input {
     text-align: center;
     font-size: 3rem;
     height: 50px;
-    width: 150px;
+    width: 100px;
     border: none;
     font-family: 'Kaushan Script', cursive;
 }

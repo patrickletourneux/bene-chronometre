@@ -14,20 +14,16 @@
 </head>
 
 <body>
-    <div>chronomètre pour test WISC</div>
+    <div id="title">chronomètre pour test WISC</div>
     <div class="user_gui">
-        <div>
+        <div class="counter">
 
             <div id="counter-minute">0</div>
-            <p>mn</p>
+            <p>mn-</p>
             <div id="counter-seconde">0</div>
             <p>sec</p>
         </div>
-        <input type="number" id="time-mesurement">
-        <p>seconds</p>
-        <!-- <button id='button_start'>start</button>
-        <button id='button_pause'>pause</button>
-        <button id='button_reset'>reset</button> -->
+
     </div>
 
 
@@ -43,8 +39,15 @@
             <span class="dot"></span>
         </div>
     </div>
+    <div class="counter">
 
-    <div class="user_gui">
+        <input type="number" id="time-mesurement">
+        <p>seconds</p>
+        <!-- <button id='button_start'>start</button>
+            <button id='button_pause'>pause</button>
+            <button id='button_reset'>reset</button> -->
+    </div>
+    <div class="user_button">
         <!-- <input type="number" id="time-mesurement"> -->
         <button id='button_start'>start</button>
         <button id='button_pause'>pause</button>
