@@ -8,19 +8,18 @@ var minute = 0;
 function chrono() {
     console.log('chrono');
     document.querySelector('.seconde').style.transform = `rotate(${90+(second*6)}deg)`;
-    document.getElementById('time-mesurement').value = second
-    document.getElementById('counter-seconde').textContent = second % 60 ;
+    document.getElementById('time-mesurement').value = second;
+    document.getElementById('counter-seconde').textContent = second % 60;
     if ((second % 60) == 0){
-        console.log('update minute')
+        console.log('update minute');
         minute++;
         console.log('minute:', minute)
         document.getElementById('counter-minute').textContent = minute ;
     }
     let rebours =  document.getElementById('time-inverse').value;
     document.getElementById('time-inverse').value = rebours -1;
-    console.log('rebours:', rebours)
+    console.log('rebours:', rebours);
     if (rebours < 7){
-        console.log('toto')
         document.getElementById('time-inverse').style.backgroundColor = '#007fff';
     }
     second++;
@@ -30,12 +29,12 @@ var myIntervalSecond;
 const start = (event) => {
     clearInterval(myIntervalSecond);
     myIntervalSecond = setInterval(chrono, 1000);
-    const element = event.target
+    const element = event.target;
     changeColorButton(element);
 };
 const pause = (event) => {
     clearInterval(myIntervalSecond);
-    const element = event.target
+    const element = event.target;
     changeColorButton(element);
 };
 const reset = (event) => {
@@ -49,7 +48,7 @@ const reset = (event) => {
     document.getElementById('time-inverse').style.backgroundColor = 'white';
     document.getElementById('counter-seconde').textContent = 0;
     document.getElementById('counter-minute').textContent = 0;
-    const element = event.target
+    const element = event.target;
     changeColorButton(element);
 };
 const changeColorButton = (element) => {

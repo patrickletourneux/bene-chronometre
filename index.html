@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>chronomètre</title>
@@ -22,6 +23,10 @@
             <div id="counter-seconde">0</div>
             <p>sec</p>
         </div>
+        <div class="counter">
+            <input type="number" id="time-mesurement">
+            <p>secondes</p>
+        </div>
     </div>
     <div class="clock">
         <div class="wrap">
@@ -33,16 +38,19 @@
         </div>
     </div>
     <div class="counter-inverse">
-        <input type="number" id="time-inverse" value = 45>
+        <input type="number" id="time-inverse" value=45>
     </div>
-    <div class="counter">
-        <input type="number" id="time-mesurement">
-        <p>secondes</p>
-    </div>
+
     <div class="user_button">
-        <button id='button_start'>start</button>
-        <button id='button_pause'>pause</button>
-        <button id='button_reset'>reset</button>
+        <button id='button_start'><span class="material-icons">
+                play_arrow
+            </span></button>
+        <button id='button_pause'><span class="material-icons">
+                pause
+            </span></button>
+        <button id='button_reset'><span class="material-icons">
+                restart_alt
+            </span></button>
     </div>
 </body>
 <script src="clock.js"></script>
