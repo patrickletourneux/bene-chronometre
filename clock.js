@@ -16,6 +16,13 @@ function chrono() {
         console.log('minute:', minute)
         document.getElementById('counter-minute').textContent = minute ;
     }
+    let rebours =  document.getElementById('time-inverse').value;
+    document.getElementById('time-inverse').value = rebours -1;
+    console.log('rebours:', rebours)
+    if (rebours < 7){
+        console.log('toto')
+        document.getElementById('time-inverse').style.backgroundColor = '#007fff';
+    }
     second++;
 }
 
@@ -38,11 +45,15 @@ const reset = (event) => {
     document.querySelector('.seconde').style.transform = `rotate(90deg)`;
     second = 1;
     minute = 0;
+    document.getElementById('time-inverse').value = 45;
+    document.getElementById('time-inverse').style.backgroundColor = 'white';
+    document.getElementById('counter-seconde').textContent = 0;
+    document.getElementById('counter-minute').textContent = 0;
     const element = event.target
     changeColorButton(element);
 };
 const changeColorButton = (element) => {
-    element.style.backgroundColor = 'hsl(239, 66%, 53%)';
+    element.style.backgroundColor = '#007fff';
     myIntervalcolor = setTimeout(() => {
         element.style.backgroundColor = 'rgb(231, 231, 231)'
     }, 300);

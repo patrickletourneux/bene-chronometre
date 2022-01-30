@@ -1,3 +1,5 @@
+
+/* 007fff  blue arrow */
 body {
     display: flex;
     justify-content: center;
@@ -72,11 +74,12 @@ body {
 
 input {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     height: 50px;
     width: 100px;
     border: none;
     font-family: 'Kaushan Script', cursive;
+    border-radius: 5px;
 }
 
 button {
