@@ -31,7 +31,7 @@ body {
     border-radius: 4px;
     transform-origin: center;
     transform: rotate(90deg);
-    background-image: url(aiguille-fleche.png);
+    background-image: url(../images/aiguille-fleche.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 55%;
@@ -50,7 +50,7 @@ body {
     right: 0;
     /* background: hsl(239, 66%, 53%); */
     transform-origin: center;
-    background-image: url(losange.png);
+    background-image: url(../images/losange.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 79%;
